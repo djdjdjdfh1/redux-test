@@ -29,6 +29,8 @@ export default function MemoComp() {
       <button onClick={()=>{dispatch(addMemo({text:input, date:"2023-05-16"}))}}>
         추가
       </button>
+      <hr />
+      <h1>즐겨찾기</h1>
       {
         like.map((l, index)=>(
           <div key={l.id}>
